@@ -27,41 +27,20 @@ When entering text in the input field, an API call endpoint is requested:
 ...
 
 POST https://songsexcerpt.mohd.app/artists/search
-Payload: {"artists_name":"mi"}
+Payload: {"artists_name":"stevie ni"}
 
 Response: 
 
 [
-    {
-    "id": 635912,
-    "name": "         (LAYER, Sayo, Saya, Michelle & Rui)"
+   {
+    "id": 581829,
+    "name": "Elton John & Stevie Nicks"
 }, {
-    "id": 638914,
-    "name": "       (Akino, Mifuyu, Yukari & Tamaki)"
+    "id": 9763,
+    "name": "Stevie Nicks"
 }, {
-    "id": 598541,
-    "name": "       (Futaba Igarashi, Touko Sakurai, Natsumi Kurobe, Mona Tsukishiro)"
-}, {
-    "id": 404005,
-    "name": "      (Ka Ponik & Michta)"
-}, {
-    "id": 604967,
-    "name": "      (Nico Yazawa, Rin Hoshizora & Hanayo Koizumi)"
-}, {
-    "id": 597896,
-    "name": "     (Dmitry Malikov & Anna Pletneva)"
-}, {
-    "id": 226486,
-    "name": "     (Epic Rap Battles of Minecraft)"
-}, {
-    "id": 604643,
-    "name": "     (Honoka Kosaka, Kotori Minami, Umi Sonoda)"
-}, {
-    "id": 447525,
-    "name": "     (Irina Allegrova & Mikhail Shufutinsky)"
-}, {
-    "id": 444505,
-    "name": "     (Mikhail Shufutinsky & Suzanna Tepper))"
+    "id": 114625,
+    "name": "Stevie Nicks & Kenny Loggins"
 }
 ]
 
@@ -76,6 +55,11 @@ Response (may vary because it is random):
     "song": "Bella Donna",
     "lyrics_excerpt": "Bella donna\nAnd we fight for the northern star"
 }
+...
+
+## Notes
+
+-`innerHTML` was used in the code to simplify markup generation. The unsafe nature of `innerHTML` does not pose a real threat in this application for learning purposes. In the unlikely case the API was hacked, we'll add defenses on client-side so that we don't render external malicious content.
 
 
 ## Sources
